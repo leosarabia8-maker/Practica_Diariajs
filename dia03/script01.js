@@ -6,6 +6,9 @@ function registroEmpleados (nombre){
 if (nombre === "" ){
   return("No queremos empleados fantasmas ")
 }
+else if (trabajadores.includes(nombre)){
+return("Nombre ya ingresado ")
+}
 else{
     trabajadores.push(nombre)
   return("Bienvenido : " + trabajadores.join (",") + " Total " + trabajadores.length )
